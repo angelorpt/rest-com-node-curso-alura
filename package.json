@@ -1,0 +1,11 @@
+{
+  "name": "rest-com-node",
+  "version": "1.0.0",
+  "description": "Curso REST com Node - Alura",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Angelo Rafael",
+  "license": "ISC"
+}
