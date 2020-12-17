@@ -1,4 +1,5 @@
-# REST com Node - Alura - Estudo Pessoal
+# REST com Node - Alura - Curso
+REST com Node: API com Express e MySQL
 
 Baseado no curso da Alura
 
