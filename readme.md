@@ -22,4 +22,7 @@ $ npm install --save-dev nodemon
 ```bash
 $ npm install consign
 ```
+```bash
+$ npm install body-parser
+```
 
