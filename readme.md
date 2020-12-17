@@ -1,4 +1,6 @@
+# REST com Node - Alura - Estudo Pessoal
 
+Baseado no curso da Alura
 
 ## Comandos Terminal
 
@@ -16,5 +18,8 @@ $ npm install express
 ```
 ```bash
 $ npm install --save-dev nodemon
+```
+```bash
+$ npm install consign
 ```
 
