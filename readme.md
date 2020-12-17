@@ -26,4 +26,7 @@ $ npm install consign
 ```bash
 $ npm install body-parser
 ```
+```bash
+$ npm install mysql
+```
 
