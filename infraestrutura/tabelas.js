@@ -11,12 +11,14 @@ class Tabelas {
     {
         const sql = `create table if not exists atendimentos
         (
-            id          int         NOT NULL AUTO_INCREMENT,
-            cliente     varchar(50) NOT NULL,
-            pet         varchar(20) NOT NULL,
-            servico     varchar(20) NOT NULL,
-            status      varchar(20) NOT NULL,
-            observacoes text,
+            id            int         NOT NULL AUTO_INCREMENT,
+            cliente       varchar(50) NOT NULL,
+            pet           varchar(20) NOT NULL,
+            servico       varchar(20) NOT NULL,
+            status        varchar(20) NOT NULL,
+            data          datetime    NOT NULL,
+            data_cadastro datetime    NOT NULL,
+            observacoes   text,
 
             primary key (id)
         )`

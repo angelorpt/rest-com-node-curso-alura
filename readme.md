@@ -29,4 +29,7 @@ $ npm install body-parser
 ```bash
 $ npm install mysql
 ```
+```bash
+$ npm install moment
+```
 
