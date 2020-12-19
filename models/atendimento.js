@@ -79,6 +79,26 @@ class Atendimento {
                 }
             })
         }
+    }  
+    
+    
+    update(dados, id, res) {
+        const sql = `update atendimentos set ? where id = ?`
+
+        if (dados.data) {
+            if (!moment(dados.data, 'DD/MM/YYYY').isValid()) {
+                res.status(422).json({ message: 'Data Inválida' })
+            }
+            dados.data = moment(dados.data, 'DD/MM/YYYY').format('YYYY-MM-DD HH:MM:SS')
+        }
+
+        conexao.query(sql, [dados, id], (error, result) => {
+            if (error) {
+                res.status(400).json(error)
+            } else {
+                res.status(200).json(result)
+            }
+        })
     }    
 }
 

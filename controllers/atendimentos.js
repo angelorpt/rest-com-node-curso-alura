@@ -11,6 +11,12 @@ module.exports = (app) => {
 
     app.post('/atendimentos', (req, res) => {
         const atendimento = req.body
-        Atendimento.save(atendimento, res)
+        Atendimento.store(atendimento, res)
+    })
+
+    app.patch('/atendimentos/:id', (req, res) => {
+        const id    = parseInt(req.params.id)
+        const dados = req.body
+        Atendimento.update(dados, id, res)
     })
 }
