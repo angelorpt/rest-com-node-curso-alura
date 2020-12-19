@@ -99,6 +99,20 @@ class Atendimento {
                 res.status(200).json(result)
             }
         })
+    }  
+    
+    
+    destroy(res, id) {
+        
+        const sql = `delete from atendimentos where id = ${id}`
+
+        conexao.query(sql, (error, result) => {
+            if (error) {
+                res.status(400).json(error)
+            } else {
+                res.status(200).json(result)
+            }
+        })
     }    
 }
 
